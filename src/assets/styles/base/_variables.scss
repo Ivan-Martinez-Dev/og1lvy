@@ -1,0 +1,19 @@
+// src/assets/styles/base/_variables.scss
+
+$primary-color: #b960fd;
+$secondary-color: #b885fd;
+$footer-color: #976ece;
+$black: #111111;
+$white: #ffffff;
+
+
+@mixin container {
+    max-width: 100%;
+    padding: 40px 32px;
+
+    @media (min-width: 992px) {
+        max-width: 1366px;
+        margin: 0 auto;
+        padding: 60px 116px;
+    }
+}

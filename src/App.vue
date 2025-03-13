@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeroSection />
+  <CounterSection />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import HeroSection from './components/HeroSection.vue';
+import CounterSection from './components/CounterSection.vue';
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeroSection,
+    CounterSection
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@use '@/assets/styles/base/reset.scss';
 </style>

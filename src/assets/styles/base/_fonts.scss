@@ -1,0 +1,23 @@
+//src/assets/styles/base/_fonts.scss
+
+@font-face {
+    font-family: 'Krub-Bold';
+    src: url('@/assets/fonts/Krub-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Krub-Regular';
+    src: url('@/assets/fonts/Krub-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Oswald-Medium';
+    src: url('@/assets/fonts/Oswald-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
