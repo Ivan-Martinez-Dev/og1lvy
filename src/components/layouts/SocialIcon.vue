@@ -18,14 +18,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-// &--facebook {
-//   background-image: url('@/assets/icons/facebook.svg');
-// }
 
-// &--instagram {
-//   background-image: url('@/assets/icons/instagram.svg');
-// }
-
-// &--youtube {
-//   background-image: url('@/assets/icons/youtube.svg');
-// }</style>
+</style>

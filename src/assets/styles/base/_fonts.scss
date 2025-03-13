@@ -6,7 +6,12 @@
     font-weight: bold;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Krub-SemiBold';
+    src: url('@/assets/fonts/Krub-SemiBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Krub-Regular';
     src: url('@/assets/fonts/Krub-Regular.ttf') format('truetype');
