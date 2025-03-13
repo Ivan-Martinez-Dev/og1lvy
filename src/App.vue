@@ -1,6 +1,7 @@
 <template>
   <HeroSection />
   <CounterSection />
+  <CourseSection />
   <div class="container-hidden">
     <AboutSection />
     <WhySection />
@@ -21,11 +22,14 @@ import UsersSection from './components/UsersSection.vue';
 import VideoSection from './components/VideoSection.vue';
 import WhySection from './components/WhySection.vue';
 import AboutSection from './components/AboutSection.vue';
+import CourseSection from './components/CourseSection.vue';
+
 export default {
   name: 'App',
   components: {
     HeroSection,
     CounterSection,
+    CourseSection,
     AboutSection,
     WhySection,
     VideoSection,

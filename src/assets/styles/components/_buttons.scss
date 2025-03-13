@@ -59,6 +59,10 @@
         align-items: center;
         border-radius: 2px;
 
+        &.more {
+            right: 0;
+        }
+
         &::before {
             content: '';
             width: 100%;
@@ -99,6 +103,10 @@
         overflow: hidden;
         z-index: 1;
         position: relative;
+
+        &.card {
+            max-width: 120px;
+        }
 
         &::before {
             content: '';
