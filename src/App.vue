@@ -1,7 +1,11 @@
 <template>
   <HeroSection />
   <CounterSection />
-  <WhySection />
+  <div class="container-hidden">
+    <AboutSection />
+    <WhySection />
+  </div>
+
   <VideoSection />
   <UsersSection />
   <FormSection />
@@ -16,11 +20,13 @@ import FooterSection from './components/layouts/FooterSection.vue';
 import UsersSection from './components/UsersSection.vue';
 import VideoSection from './components/VideoSection.vue';
 import WhySection from './components/WhySection.vue';
+import AboutSection from './components/AboutSection.vue';
 export default {
   name: 'App',
   components: {
     HeroSection,
     CounterSection,
+    AboutSection,
     WhySection,
     VideoSection,
     UsersSection,
@@ -33,4 +39,8 @@ export default {
 
 <style lang="scss">
 @use '@/assets/styles/base/reset.scss';
+
+.container-hidden {
+  overflow: hidden;
+}
 </style>
