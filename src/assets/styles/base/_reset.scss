@@ -1,5 +1,6 @@
 // src/assets/styles/base/_reset.scss
-@use 'variables' as *;  
+@use 'variables' as *;
+
 *,
 *::before,
 *::after {
@@ -8,6 +9,32 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background: $black;
+}
+
+/* Scrollbar Vertical */
+::-webkit-scrollbar {
+    width: 7px;
+    /* Ancho de la scrollbar vertical */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    /* Color de la pista de la scrollbar */
+    border-radius: 10px;
+    /* Bordes redondeados */
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    /* Color de la manija */
+    border-radius: 10px;
+    border: none;
+    /* Borde blanco alrededor de la manija */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Color cuando el puntero pasa sobre la manija */
 }

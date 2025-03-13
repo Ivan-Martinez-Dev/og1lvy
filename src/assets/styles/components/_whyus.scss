@@ -1,0 +1,105 @@
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+
+.whyus {
+
+
+    &__container {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+
+        @media (min-width: 992px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &--type-02 {
+            order: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (min-width: 992px) {
+                order: 1;
+            }
+
+            & img {
+                width: 100%;
+                max-width: 356px;
+
+                @media (min-width: 992px) {
+                    max-width: 600px;
+                }
+            }
+        }
+
+        &--type-03 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+
+            @media (min-width: 992px) {
+                order: 2;
+                align-items: flex-start;
+                max-width: 400px;
+            }
+        }
+    }
+
+    &__title {
+        font-family: 'Krub-Bold';
+        font-size: 40px;
+        color: $white;
+        text-align: center;
+
+        & span {
+            font-family: 'Krub-Regular';
+            color: $primary-color;
+        }
+    }
+
+    &__text {
+        font-family: 'Krub-SemiBold';
+        color: $white;
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 1px;
+        text-wrap: pretty;
+    }
+
+    &__decorator {
+        font-family: 'Krub-Bold';
+        text-transform: uppercase;
+        color: rgba($color: $white, $alpha: 0.1);
+        font-size: 70px;
+        position: absolute;
+        top: 50%;
+        right: -132px;
+        transform: translateY(-50%) rotate(270deg);
+        display: none;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
+    }
+
+    &__circle {
+        background: url('/src/assets/images/circle.png') no-repeat center center / cover;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 50px;
+        bottom: 0;
+
+        @media (min-width: 992px) {
+            right: 110px;
+
+        }
+    }
+}

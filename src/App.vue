@@ -1,9 +1,10 @@
 <template>
   <HeroSection />
   <CounterSection />
+  <WhySection />
   <VideoSection />
   <UsersSection />
-  <FormSection/>
+  <FormSection />
   <FooterSection />
 </template>
 
@@ -14,15 +15,17 @@ import FormSection from './components/FormSection.vue';
 import FooterSection from './components/layouts/FooterSection.vue';
 import UsersSection from './components/UsersSection.vue';
 import VideoSection from './components/VideoSection.vue';
+import WhySection from './components/WhySection.vue';
 export default {
   name: 'App',
   components: {
     HeroSection,
     CounterSection,
+    WhySection,
     VideoSection,
     UsersSection,
     FormSection,
-    
+
     FooterSection
   }
 }

@@ -81,4 +81,48 @@
             }
         }
     }
+
+    &__primary {
+        width: 100%;
+        max-width: 330px;
+        height: 50px;
+        background: $secondary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: 'Oswald-Bold';
+        color: $white;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: $white;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            transition: top 0.3s ease;
+            /* Transición solo para el top */
+            z-index: -1;
+        }
+
+        @media (min-width: 992px) {
+            width: 150px;
+
+            &:hover {
+                color: $secondary-color;
+
+                &::before {
+                    top: 0%;
+                }
+            }
+        }
+    }
 }
