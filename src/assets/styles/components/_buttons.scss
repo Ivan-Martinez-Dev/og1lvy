@@ -46,4 +46,39 @@
         }
 
     }
+
+    &__swiper {
+        background: transparent;
+        border: none;
+        position: absolute;
+        cursor: pointer;
+        overflow: hidden;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: $secondary-color;
+            position: absolute;
+            top: -100%;
+            left: 0;
+            transition: top 0.3s ease;
+            /* Transición solo para el top */
+            z-index: -1;
+        }
+
+        @media (min-width: 992px) {
+
+            &:hover {
+                &::before {
+                    top: 0%;
+                }
+            }
+        }
+    }
 }
