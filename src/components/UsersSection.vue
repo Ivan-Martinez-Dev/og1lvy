@@ -8,7 +8,8 @@
             <swiper ref="mySwiper" :slidesPerView="1" :spaceBetween="10" :loop="true" :navigation="{
                 nextEl: '.users__swiper--next',
                 prevEl: '.users__swiper--prev'
-            }" :breakpoints="{
+            }" 
+            :breakpoints="{
                 992: {
                     slidesPerView: 3,
                     spaceBetween: 0
