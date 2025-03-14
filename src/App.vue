@@ -1,4 +1,5 @@
 <template>
+  <HeaderSection />
   <HeroSection />
   <CounterSection />
   <AcceptSection />
@@ -24,10 +25,12 @@ import VideoSection from './components/VideoSection.vue';
 import WhySection from './components/WhySection.vue';
 import AboutSection from './components/AboutSection.vue';
 import CourseSection from './components/CourseSection.vue';
+import HeaderSection from './components/layouts/HeaderSection.vue';
 
 export default {
   name: 'App',
   components: {
+    HeaderSection,
     HeroSection,
     CounterSection,
     AcceptSection,
@@ -41,6 +44,7 @@ export default {
     FooterSection
   }
 }
+
 </script>
 
 <style lang="scss">

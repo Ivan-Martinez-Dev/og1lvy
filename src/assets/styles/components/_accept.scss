@@ -4,7 +4,7 @@
 .accept {
     &__container {
         @include container;
-        padding: 120px 32px;
+        padding: 80px 32px;
         position: relative;
 
         @media (min-width: 992px) {
