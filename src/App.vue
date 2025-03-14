@@ -1,12 +1,12 @@
 <template>
   <HeroSection />
   <CounterSection />
+  <AcceptSection />
   <CourseSection />
   <div class="container-hidden">
     <AboutSection />
     <WhySection />
   </div>
-
   <VideoSection />
   <UsersSection />
   <FormSection />
@@ -16,6 +16,7 @@
 <script>
 import HeroSection from './components/HeroSection.vue';
 import CounterSection from './components/CounterSection.vue';
+import AcceptSection from './components/AcceptSection.vue';
 import FormSection from './components/FormSection.vue';
 import FooterSection from './components/layouts/FooterSection.vue';
 import UsersSection from './components/UsersSection.vue';
@@ -29,6 +30,7 @@ export default {
   components: {
     HeroSection,
     CounterSection,
+    AcceptSection,
     CourseSection,
     AboutSection,
     WhySection,

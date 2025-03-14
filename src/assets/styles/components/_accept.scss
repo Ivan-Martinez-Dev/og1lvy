@@ -1,0 +1,107 @@
+@use '../base/variables' as *;
+@use '../base/fonts' as *;
+
+.accept {
+    &__container {
+        @include container;
+        padding: 120px 32px;
+        position: relative;
+
+        @media (min-width: 992px) {
+            padding: 140px 116px;
+
+        }
+
+        &--type-02 {
+            background: url('/src/assets/images/oval-3.png') no-repeat center center / contain;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (min-width: 992px) {
+                height: 300px;
+            }
+        }
+
+        &--type-03 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 60px 0 0;
+
+            @media (min-width: 992px) {
+                margin: 80px 0 0;
+            }
+        }
+    }
+
+    &__text {
+        font-family: 'Krub-Bold';
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: $white;
+
+        @media (min-width: 992px) {
+            font-size: 70px;
+        }
+
+        &.type-02 {
+            color: rgba($color: $white, $alpha: 0.1);
+            font-size: 20px;
+
+            @media (min-width: 992px) {
+                font-size: 40px;
+                letter-spacing: 0.5px;
+            }
+        }
+
+        &.type-03 {
+            font-size: 16px;
+        }
+
+        & span {
+            font-family: 'Krub-Light';
+        }
+    }
+
+    &__arrow {
+        background: url('/src/assets/images/Arrow-3.png') no-repeat center center / contain;
+        width: 20px;
+        height: 34px;
+
+        @media (min-width: 992px) {
+            width: 25px;
+            height: 70px;
+        }
+    }
+
+    &__square {
+        width: 8px;
+        height: 8px;
+        background: $white;
+    }
+
+    &__decorator {
+        display: none;
+        width: fit-content;
+        flex-direction: row;
+        gap: 14px;
+        align-items: center;
+        position: absolute;
+        left: 25px;
+        top: 30%;
+        transform: translateY(-50%) rotate(90deg);
+
+        &.type-02 {
+            left: auto;
+            right: 25px;
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+
+        }
+    }
+}
